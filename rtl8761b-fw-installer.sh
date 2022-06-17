@@ -9,5 +9,6 @@ if [ $EUID -ne 0 ]; then
 fi
 mkdir -p /lib/firmware/rtl_bt
 curl -s https://raw.githubusercontent.com/Realtek-OpenSource/android_hardware_realtek/rtk1395/bt/rtkbt/Firmware/BT/rtl8761b_fw -o /lib/firmware/rtl_bt/rtl8761b_fw.bin
+curl -s https://raw.githubusercontent.com/Realtek-OpenSource/android_hardware_realtek/rtk1395/bt/rtkbt/Firmware/BT/rtl8761b_config -o /lib/firmware/rtl_bt/rtl8761b_config.bin
 echo "Installation complete. Now reboot your system."
 echo "If still not working after reboot, then regenerate your initramfs."
